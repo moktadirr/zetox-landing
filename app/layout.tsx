@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     description: "We're on a mission to make digital communication more emotionally intelligent.",
     type: "website",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -36,3 +35,4 @@ export default function RootLayout({
       <body className="antialiased cursor-none">{children}</body>
     </html>
   )
+}
