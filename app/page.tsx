@@ -109,7 +109,7 @@ export default function Home() {
         </motion.main>
 
         {/* Footer */}
-        <footer className="py-12 border-t border-gray-100/50">
+        <footer className="py-8 border-t border-gray-100/50">
           <div className="max-w-6xl mx-auto px-6 md:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <motion.p
