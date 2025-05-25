@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "We're on a mission to make digital communication more emotionally intelligent.",
     type: "website",
   },
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -29,10 +30,9 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-987XN0ZZEG');
-            gtag('config', 'G-987XN0ZZEG');
           `}
+        </Script>
       </head>
       <body className="antialiased cursor-none">{children}</body>
     </html>
   )
-}
