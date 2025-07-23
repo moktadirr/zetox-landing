@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: "We're on a mission to make digital communication more emotionally intelligent.",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
@@ -21,14 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-987XN0ZZEG" strategy="afterInteractive" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-987XN0ZZEG');
+            gtag('config', 'GA_MEASUREMENT_ID');
           `}
         </Script>
       </head>
